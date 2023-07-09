@@ -68,7 +68,7 @@ defmodule Ads.Treap.Node do
     end
   end
 
-  # We assume that all keys in left are strictly less that in right
+  # We assume that all keys in left are strictly less than in right
   def merge(nil = _non_existent_left, nil = _non_existent_right), do: nil
   def merge(nil = _non_existent_left, %Node{} = right), do: right
   def merge(%Node{} = left, nil = _non_existent_right), do: left
